@@ -21,6 +21,35 @@ export default class CityInput extends React.Component {
             e.target.value = '';
 
           } //end if-else
+
+          
         }; // end onKlick
-        
+
+        const style = {
+            top: this.props.city ? '-380px' : '-20px',
+            width: '600px',
+            display: 'inline-block',
+            padding: '10px 0px 10px 30px',
+            lineHeight: '120%',
+            position: 'relative',
+            borderRadius: '20px',
+            outline: 'none',
+            fontSize: '20px',
+            transition: 'all 0.5s ease-out'
+          };
+
+        return (
+            <input
+                className='city-input'
+                style={style}
+                type='text'
+                placeholder='Enter a City...'
+                onKeyPress={onKlickHandler}
+            />
+        );
+
     } //end class
+
+
+
+}// end class
