@@ -1,7 +1,8 @@
-import logo from './logo.svg';
 import React from 'react';
-import CityInput from './utilities/CityInput';
+// import CityInput from './utilities/CityInput';
+import CityInput from 'C:/Users/gavin/OneDrive/Documents/WeatherReaction/react-weather/utilities/CityInput.js';
 import WeatherBox from './utilities/WeatherBox';
+import MainWeatherWindow from './utilities/MainWeatherWindow';
 import './App.css';
 
 
@@ -37,7 +38,7 @@ class App extends React.Component{
 
   callAPI = async city => {
     const api_data = await fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${city}&APPID=6557810176c36fac5f0db536711a6c52`).then(resp => resp.json());
-    if(api_data.cod == '200') {
+    if(api_data.cod === '200') {
       await this.updateSate(api_data);
       return true;
     }
@@ -71,7 +72,7 @@ class App extends React.Component{
     dayIndeces.push(0);
 
     for(let i=0; i<4; i++){
-      while (tmp == data.list[index].dt_txt.slice(8, 10) || data.list[index].dt_txt.slice(11, 13) != '15') {
+      while (tmp === data.list[index].dt_txt.slice(8, 10) || data.list[index].dt_txt.slice(11, 13) !== '15') {
         index++;
       }
       dayIndeces.push(index);
