@@ -9,7 +9,7 @@ export default class MainWeatherWindow extends React.Component{
             <div className='main'>
                 <div className='inner-main'>
                     {Title}
-                    <img src= {this.props.data ? require('../images/${this.props.data.icon}.svg') : require('../images/sun.svg')}
+                    <img src= {this.props.data ? require('./${this.props.data.icon}.svg') : require('./sun.svg')}
                         alt='sun'style={{
                             visibility: this.props.city ? 'visible' : 'hidden',
                             opacity: this.props.city ? '1' : '0'

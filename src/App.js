@@ -1,7 +1,7 @@
 import React from 'react';
-import CityInput from '../utilities/CityInput';
-import WeatherBox from '../utilities/WeatherBox';
-import MainWeatherWindow from '../utilities/MainWeatherWindow';
+import CityInput from './CityInput';
+import WeatherBox from './WeatherBox';
+import MainWeatherWindow from './MainWeatherWindow';
 import './App.css';
 
 
