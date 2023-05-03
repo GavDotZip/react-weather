@@ -1,8 +1,7 @@
 import React from 'react';
-// import CityInput from './utilities/CityInput';
-import CityInput from 'C:/Users/gavin/OneDrive/Documents/WeatherReaction/react-weather/utilities/CityInput.js';
-import WeatherBox from './utilities/WeatherBox';
-import MainWeatherWindow from './utilities/MainWeatherWindow';
+import CityInput from '../utilities/CityInput';
+import WeatherBox from '../utilities/WeatherBox';
+import MainWeatherWindow from '../utilities/MainWeatherWindow';
 import './App.css';
 
 
