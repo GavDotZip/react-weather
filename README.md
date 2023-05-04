@@ -1,3 +1,5 @@
+This is a simple project built using React which I have made while self learning the language
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
