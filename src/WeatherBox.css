@@ -33,3 +33,8 @@
     justify-content: space-around;
     align-content: center;
   }
+
+  .temp {
+    padding-bottom: 10px;
+    font-size: 0.93em;
+  }
